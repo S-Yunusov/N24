@@ -1,6 +1,7 @@
 /* GLOBAL */
 :root{
   --accent-color: #7296ec;
+  --focus-property: 2px dashed #7296ec;
 }
 
 html{
@@ -37,7 +38,7 @@ img{
 /* OUTLINE-STYLES */
 
 *:focus{
-  outline: 2px dashed var(--accent-color);
+  outline: var(--focus-property);
   outline-offset: 2px;
 }
 
@@ -689,7 +690,8 @@ img{
   color: #fff;
 }
 .site-footer *:focus{
-  outline: 2px dashed #fff;
+  --focus-property: 2px dashed #fff;
+  outline-offset: 2px;
 }
 
 .site-footer-logo-wrapper {
